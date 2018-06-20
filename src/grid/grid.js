@@ -3,6 +3,9 @@ import { data } from '../data/dataJSON';
 import { ProductContainer } from '../Product/ProductContainer';
 
 export class Grid extends React.Component {
+    constructor(props){
+        super(props);
+    }
 
     render() {
         let items = data.search_response.items.Item
@@ -11,7 +14,10 @@ export class Grid extends React.Component {
                 {
                     items.map((item, i) => {
                         return (
-                            <ProductContainer index={i}/>
+                            <React.Fragment>
+                                <ProductContainer index={i} key={i}/>
+                            </React.Fragment>
+
                         )
                     })
                 }

@@ -2,14 +2,19 @@ import React, { Component } from 'react';
 import './App.css';
 import { ProductContainer } from './Product/ProductContainer';
 import { Grid } from './grid/grid';
+import { createStore } from 'redux';
+import { Reducer } from './store/app_reducers';
+import { Provider } from 'react-redux';
+const store = createStore(Reducer);
+
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Grid />
-      </React.Fragment>
+      <Provider store={store}>
+        <Grid  />
+      </Provider>
+
     );
   }
 }
-
 export default App;
