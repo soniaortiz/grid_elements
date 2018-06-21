@@ -17,6 +17,9 @@ export class Grid extends React.Component {
                 </div>
                 {
                     items.map((item, i) => {
+                        if (i === 11) {
+                            console.log(item);
+                        }
                         return (
                             <React.Fragment>
                                 <ProductContainer index={i} key={i} />
