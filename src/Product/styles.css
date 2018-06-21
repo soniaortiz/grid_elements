@@ -1,7 +1,6 @@
 .productContainer{
     display: inline-block;
     justify-content: center;
-    /* width: 100%; */
     padding: 7.5px;
 }
 
@@ -26,8 +25,8 @@
     margin-bottom: 10px;
     padding-left: 7.5px;
     padding-right: 7.5px;
-    margin: 5px;
-     
+    margin: 5px;     
+    width: 35%;
 }
 
 .eoqnrw {
