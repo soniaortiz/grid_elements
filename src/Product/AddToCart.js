@@ -1,14 +1,15 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { addProductAction } from '../store/addProduct';
+import { addProductAction, addProductDescription } from '../store/addProduct';
 import './styles.css';
 
 export class AddToCart extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
     }
     add = () => {
         this.props.addItem();
+        this.props.addItemToList(this.props.index);
     }
     render() {
         return (
@@ -24,6 +25,7 @@ export default connect(
 
     }),
     {
-        addItem: addProductAction
+        addItem: addProductAction,
+        addItemToList: addProductDescription
     }
 )(AddToCart);

@@ -4,7 +4,7 @@ import { data } from '../data/dataJSON';
 export function ProductInformation(props) {
     return (
         <React.Fragment>
-            <AddToCart />
+            <AddToCart index={props.index}/>
 
             <button 
                 aria-label="love ShedRain Auto Open/Close Compact Umbrella  - Black to keep tabs on it" 

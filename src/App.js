@@ -14,13 +14,11 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-
         <React.Fragment>
           <div >
             <Grid />
           </div>
         </React.Fragment>
-
       </Provider>
 
     );
