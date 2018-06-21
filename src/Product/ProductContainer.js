@@ -5,9 +5,9 @@ import { ProductInformation } from './ProductInformation';
 import './styles.css';
 export function ProductContainer(props) {
     return (
-        <div className="productContainer">
+        <div className="productContainer jMGvmv">
             <ProductImage index={props.index} />
-            <ProductInformation index={props.index}/>
+            <ProductInformation index={props.index} />
         </div>
     )
 }
